@@ -16,13 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="text-white flex items-center flex-col m-10 bg-neutral-900" lang="pt-BR" suppressHydrationWarning={true} >
+    <html className="text-white flex items-center flex-col m-8 bg-neutral-900" lang="pt-BR" suppressHydrationWarning={true} >
       <body className={inter.className}>
         <Image 
           src={'/images/logo.svg'}
           width={200}
           height={200}
           alt="Logo - meda diária"
+          className="w-80 mx-auto"
         />
         {children}
       </body>
